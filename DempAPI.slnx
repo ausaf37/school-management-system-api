@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DempAPI/DempAPI.csproj" />
+  <Project Path="SchoolManagement/SchoolManagement.csproj" />
+</Solution>

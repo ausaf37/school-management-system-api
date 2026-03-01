@@ -1,0 +1,33 @@
+﻿@model SchoolManagement.Model.LoginRequestDTO
+<form asp-controller="Authuser" asp-action="LoginUser" method="post" class="container p-4 border" style="max-width:500px;margin-top:50px;">
+    <br />
+    <div class="container p-4 border p-3">
+        <h1 class="text-primary">User Login</h1>
+        <hr />
+        <div class="row">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="col-4">
+                <label asp-for="UserName" class="control-lable pt-2" style="font-size:14px;"></label>
+            </div>
+            <div class="col-8 pb-3">
+                <input asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="col-4">
+                <label asp-for="Password" class="control-lable pt-2" style="font-size:14px;"></label>
+            </div>
+            <div class="col-8 pb-3">
+                <input type="password" asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="col-12">
+                <input type="submit" value="Login" class="btn btn-success form-control">
+            </div>
+        </div>
+    </div>
+</form>
+<br />
+@section Scripts {
+    <partial name="_ValidationScriptsPartial.cshtml" />
+}

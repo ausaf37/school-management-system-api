@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Both project",
+    "Projects": [
+      {
+        "Path": "DempAPI\\DempAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "SchoolManagement\\SchoolManagement.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
